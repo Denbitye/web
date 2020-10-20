@@ -1,0 +1,41 @@
+{% extends "teyim/layout.html" %}
+{% load static %}
+{% block body %}
+		<section id="home" class="video-hero" style="height: 800px; background-image: url({% static 'teyim/images/add.jpg' %});   background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+		<div class="overlay"></div>
+			<div class="display-t text-center">
+				<div class="display-tc">
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="animate-box">
+								<h2>About Us</h2>
+								<p class="breadcrumbs"><span><a href="{% url 'index' %}">Home</a></span> <span>About</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="colorlib-about">
+		
+				<div class="colorlib-about-flex">
+					<div class="col-half about-flex-img animate-box" style="background-image: url({% static 'teyim/images/b.jpg' %});"></div>
+					<div class="col-half">
+						<div class="row">
+							<div class="col-md-12 col-md-pull-2 animate-box">
+								<div class="about-desc">
+									<h2>We Are ጠይም Photography</h2>
+									<p style="text-align: justify;">Welcome to this community of friendship, learning, and passion for photography.</p>
+									<p style="text-align: justify;">We are ጠይም Photography capturing life, culture, and humanity, in a candid manner. We enjoy taking
+										photo walks and documenting every day situations with our cameras.</p>
+									<p style="text-align: justify;">As practicing street photographers, the we capture fleeting moments, interpreting life around us and challenging our perceptions of the world. The collective also aims to bring an appreciation of street photography to a wide audience.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+
+
+		{% endblock %}

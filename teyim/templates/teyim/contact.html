@@ -1,0 +1,100 @@
+{% extends "teyim/layout.html" %}
+{% load static %}
+{% block body %}
+<section id="home" class="video-hero"
+	style="height: 800px; background-image: url({% static 'teyim/images/p.jpg' %});  background-size:cover; background-position: center center;background-attachment:fixed;"
+	data-section="home">
+	<div class="overlay"></div>
+	<div class="display-t text-center">
+		<div class="display-tc">
+			<div class="container">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="animate-box">
+						<h2>Contact Us</h2>
+						<p class="breadcrumbs"><span><a href="{% url 'index' %}">Home</a></span> <span>Contact</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div id="colorlib-contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-push-8 animate-box">
+				<h2>Contact Information</h2>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="contact-info-wrap-flex">
+							<div class="con-info">
+								<p><span><i class="icon-location"></i></span> Addis Ababa, Ethiopia</p>
+							</div>
+							<div class="con-info">
+								<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+251
+										986945341</a></p>
+							</div>
+							<div class="con-info">
+								<p><span><i class="icon-telegram"></i></span> <a href="">ጠይም Photography</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 col-md-pull-4 animate-box">
+				<h2>Get In Touch</h2>
+				<form method="post">
+					{% csrf_token %}
+					<div class="row form-group">
+						<div class="col-md-6">
+							<!-- <label for="fname">First Name</label> -->
+							<input type="text" name="fname" id="fname" class="form-control"
+								placeholder="Your firstname">
+						</div>
+						<div class="col-md-6">
+							<!-- <label for="lname">Last Name</label> -->
+							<input type="text" name="lname" id="lname" class="form-control" placeholder="Your lastname">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<!-- <label for="email">Email</label> -->
+							<input type="text" name="email" id="email" class="form-control"
+								placeholder="Your email address">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<!-- <label for="subject">Subject</label> -->
+							<input type="text" name="subject" id="subject" class="form-control"
+								placeholder="Your subject of this message">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<!-- <label for="message">Message</label> -->
+							<textarea name="message" name="message" id="message" cols="30" rows="10"
+								class="form-control" placeholder="Say something about us"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Send Message" class="btn btn-primary">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="map" class="colorlib-map" style="margin-left: 450px;">
+	<iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252230.24876707935!2d38.63805736711384!3d8.96315049420693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa!5e0!3m2!1sen!2set!4v1603165910850!5m2!1sen!2set"
+		width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+		tabindex="0"></iframe>
+</div>
+
+{% endblock %}

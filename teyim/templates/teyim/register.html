@@ -1,0 +1,67 @@
+{% load static %}
+
+{% block body%}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <title>{% block title %}Register to ጠይም{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'teyim/css/icomoon.css' %}" />
+    <link rel="icon" type="image/png" href="{% static 'teyim\images\title.png' %}" />
+	<!-- STYLE CSS -->
+	<link href="{% static 'teyim\css\reg.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper" style="background-image: url({% static 'teyim/images/c.jpg' %});">
+
+		<div class="inner">
+			<div class="image-holder">
+                <img src="{% static 'teyim/images/f.jpg' %}" alt="">
+			</div>
+			<form action="{% url 'register' %}" method="post">
+				
+				{% csrf_token %}
+				<h3>Register to ጠይም</h3>
+				{% if message %}
+				<div>{{ message }}</div>
+			{% endif %}
+			<div class="form-group">
+				<input class="form-control" autofocus type="text" name="username" placeholder="Username">
+			</div>
+				<div class="form-wrapper">
+					<input class="form-control" type="email" name="email" placeholder="Email Address">
+                    <i class="fa fa-envelpoe"></i>
+                </div>
+
+				<div class="form-wrapper">
+					<input class="form-control" type="password" name="password" placeholder="Password">
+					<i class="fa fa-lock"></i>
+				</div>
+				<div class="form-wrapper">
+					<input class="form-control" type="password" name="confirmation" placeholder="Confirm Password">
+					
+                        <i class="fa fa-lock"></i>
+				</div>
+
+				<button type="submit" value="Register">Register
+					<i class="fa fa-arrow-right"></i>
+
+				</button><br>
+				Already have an account? <a href="{% url 'login' %}">Log In here.</a>
+
+			</form>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
+
+{% endblock %}

@@ -1,0 +1,184 @@
+{% extends "teyim/layout.html" %}
+{% load static %}
+{% block body %} 
+	
+
+		<section id="home" class="video-hero" style="height: 800px; background-image: url({% static 'teyim/images/a.jpg' %}); background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+		<div class="overlay"></div>
+			<div class="display-t text-center">
+				<div class="display-tc">
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="animate-box">
+								<h1 class="holder"><span>ጠይም</span></h1>
+								<h2>Get inspired with incredible photos </h2>
+								<p>from diverse styles and genres around Ethiopia</p>
+								<p><a href="{% url 'gallery' %}" class="btn btn-primary btn-custom">View Gallery</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<div id="colorlib-services">
+			<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+			<h2>Our commitment to photographers</h2><br>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-image2"></i>
+							</span>
+							<div class="desc">
+								<h3>Content</h3>
+								<p style="text-align: justify;">We believe that great content should speak for itself and we take pride in helping all photographers showcase their incredible work—it’s at the core of everything we do.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<span class="icon">
+								<i class="icon-leaf"></i>
+							</span>
+							<div class="desc">
+								<h3>Growth</h3>
+								<p style="text-align: justify;">The creative journey doesn’t have an end; there’s always room for improvement. We’re committed to creating a platform that challenges you to keep learning, and step outside of your comfort zone.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center animate-box">
+						<div class="services">
+							<p style="font-size: 28px;">&#128079;</p>
+							
+							<div class="desc">
+								<h3>Recognition</h3>
+								<p style="text-align: justify;">You work hard as a photographer and we know the importance of being recognized for your work and skills. We’re constantly building ways to ensure our photographers get the recognition they deserve.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="colorlib-about-flex">
+			<div class="col-half about-flex-img animate-box" style="background-image: url({% static 'teyim/images/b.jpg' %});"></div>
+			<div class="col-half">
+				<div class="row">
+					<div class="col-md-12 col-md-pull-2 animate-box">
+						<div class="about-desc">
+							<h2>We Are ጠይም Photography</h2>
+							<p style="text-align: justify;">Welcome to this community of friendship, learning, and passion for photography.</p>
+							<p style="text-align: justify;">We are ጠይም Photography capturing life, culture, and humanity, in a candid manner. We enjoy taking
+								photo walks and documenting every day situations with our cameras.</p>
+							<p style="text-align: justify;">As practicing street photographers, the we capture fleeting moments, interpreting life around us and challenging our perceptions of the world. The collective also aims to bring an appreciation of street photography to a wide audience.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="colorlib-gallery">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
+						<h2>Gallery</h2>
+						<p>“Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever… It remembers little things, long after you have forgotten everything.”</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 no-gutters">
+						<a href="{% static 'teyim\images\c.jpg' %}" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="{% static 'teyim\images\c.jpg' %}" alt="">
+							<div class="desc text-center">
+								<h2>Photo By</h2>
+								<p class="category"><span>Zemickey</span></p>
+							</div>
+						</a>
+						<a href="{% static 'teyim\images\k.jpg' %}" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="{% static 'teyim\images\k.jpg' %}" alt="">
+							<div class="desc text-center">
+								<h2>Photo By</h2>
+								<p class="category"><span>Zemickey</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 no-gutters">
+						<a href="{% static 'teyim\images\e.jpg' %}" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="{% static 'teyim\images\e.jpg' %}" alt="">
+							<div class="desc text-center">
+								<h2>Photo By</h2>
+								<p class="category"><span>Zemickey</span></p>
+							</div>
+						</a>
+						<a href="{% static 'teyim\images\f.jpg' %}" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="{% static 'teyim\images\f.jpg' %}" alt="">
+							<div class="desc text-center">
+								<h2>Photo By</h2>
+								<p class="category"><span>Zemickey</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 no-gutters">
+						<a href="{% static 'teyim\images\d.jpg' %}" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="{% static 'teyim\images\d.jpg' %}" alt="">
+							<div class="desc text-center">
+								<h2>Photo By</h2>
+								<p class="category"><span>Zemickey</span></p>
+							</div>
+						</a>
+						<a href="{% static 'teyim\images\h.jpg' %}" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="{% static 'teyim\images\h.jpg' %}" alt="">
+							<div class="desc text-center">
+								<h2>Photo By</h2>
+								<p class="category"><span>Zemickey</span></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 no-gutters">
+						<a href="{% static 'teyim\images\i.jpg' %}" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="{% static 'teyim\images\i.jpg' %}" alt="">
+							<div class="desc text-center">
+								<h2>Photo By</h2>
+								<p class="category"><span>Zemickey</span></p>
+							</div>
+						</a>
+						<a href="{% static 'teyim\images\g.jpg' %}" class="gallery-img image-popup-link animate-box"><img class="img-responsive" src="{% static 'teyim\images\g.jpg' %}" alt="">
+							<div class="desc text-center">
+								<h2>Photo By</h2>
+								<p class="category"><span>Zemickey</span></p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			
+		<div class="colorlib-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 colorlib-heading text-center animate-box">
+						<h2>Join our photography community today</h2>
+						<div class="desc">
+							<p style="text-align: justify;">We want fresh, creative talent like you. Join our global network of like-minded creators to be inspired by incredible photos daily, </p>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box" style="margin-left: 30%;">
+						<article class="article-entry">
+							<div class="desc" style="size: 500%;">
+								<h2 style="font-size: 25px;">Sign up and join ጠይም Community</h2>
+								<p>ጠይም provides an excellent opportunity to improve your photographic skills and knowledge, a venue to challenge those skills, and a place where you contribute your photography, share what you have learned with others who have a passion for photography.</p>
+								<p><a href="{% url 'register' %}" class="btn btn-primary btn-custom">Register</a></p>
+									</div>
+							
+						</article>
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+			
+		</div>
+	</div>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+	
+	{% endblock %}

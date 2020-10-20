@@ -1,0 +1,139 @@
+{% extends "teyim/layout.html" %}
+{% load static %}
+{% block body %}
+
+<section id="home" class="video-hero"
+	style="height: 800px; background-image: url({% static 'teyim/images/aab.jpg' %});  background-size:cover; background-position: center center;background-attachment:fixed;"
+	data-section="home">
+	<div class="overlay"></div>
+	<div class="display-t text-center">
+		<div class="display-tc">
+			<div class="container">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="animate-box">
+						<h2>Street  Photography</h2>
+						<p class="breadcrumbs"><span><a href="{% url 'index' %}">Home</a></span> <span>Gallery</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="colorlib-gallery">
+	<div class="container">
+		<div class="row row-pb-md">
+			<div class="col-md-3 no-gutters">
+				<a href="{% static 'teyim\images\j.jpg' %}" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="{% static 'teyim\images\j.jpg' %}" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+				<a href="{% static 'teyim\images\ab.jpg' %}" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="{% static 'teyim\images\ab.jpg' %}" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+				<a href="{% static 'teyim\images\aab.jpg' %}" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="{% static 'teyim\images\aab.jpg' %}" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="col-md-3 no-gutters">
+				<a href="{% static 'teyim\images\acc.jpg' %}" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="{% static 'teyim\images\acc.jpg' %}" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+				<a href="{% static 'teyim\images\k.jpg' %}" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="{% static 'teyim\images\k.jpg' %}" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+				<a href="#" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="#" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="col-md-3 no-gutters">
+				<a href="{% static 'teyim\images\g.jpg' %}" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="{% static 'teyim\images\g.jpg' %}" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+				<a href="{% static 'teyim\images\ac.jpg' %}" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="{% static 'teyim\images\ac.jpg' %}" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+				<a href="#" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="#" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+			</div>
+
+			<div class="col-md-3 no-gutters">
+				<a href="{% static 'teyim\images\x.jpg' %}" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="{% static 'teyim\images\x.jpg' %}" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+				<a href="{% static 'teyim\images\z.jpg' %}" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="{% static 'teyim\images\z.jpg' %}" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>
+				<a href="#" class="gallery-img image-popup-link animate-box"><img
+						class="img-responsive" src="#" alt="">
+					<div class="desc text-center">
+						<h2>Photo By</h2>
+						<p class="category"><span>Zemickey</span></p>
+
+					</div>
+				</a>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
